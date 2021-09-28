@@ -15,11 +15,11 @@ jobs:
       - name: Unit & Integration Tests
         run: mvn -B verify # -B: --batch-mode
       - name: Sonar
-          #if: success() # always() failure() success()
+          if: success() # always() failure() success()
           run: >
             mvn -B verify -DskipTests sonar:sonar
-            -Dsonar.projectKey=es.upm.miw:iwvg-devops
-            -Dsonar.organization=iwvg-devops
+            -Dsonar.projectKey=iwvg-devops
+            -Dsonar.organization=iwvg-devops-blanca
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.login=$SONAR_TOKEN
           env:
