@@ -4,11 +4,14 @@
 > ### Estado del código
 
 [![DevOps](https://github.com/Eywen/iwvg-devops-blanca-castanio/actions/workflows/test-sonar.yml/badge.svg)](https://github.com/Eywen/iwvg-devops-blanca-castanio/actions/workflows/test-sonar.yml)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Eywen_iwvg-devops-blanca-castanio&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Eywen_iwvg-devops-blanca-castanio)
+
 ### :gear: Instalación del proyecto
 1. Clonar el repositorio en tu equipo, **mediante consola** por http o ssh:
 ```sh
 > cd <folder path>
-> git clone https://github.com/:owner/:repo
+> git clone https://github.com/Eywen/iwvg-devops-blanca-castanio.git (http)
+> git clone git@github.com:Eywen/iwvg-devops-blanca-castanio.git   (ssh)
 ```
 2. Importar el proyecto mediante **IntelliJ IDEA**
    1. **Import Project**, y seleccionar la carpeta del proyecto.
