@@ -5,7 +5,7 @@
 
 [![DevOps](https://github.com/Eywen/iwvg-devops-blanca-castanio/actions/workflows/test-sonar.yml/badge.svg)](https://github.com/Eywen/iwvg-devops-blanca-castanio/actions/workflows/test-sonar.yml)
 ### :gear: Instalación del proyecto
-1. Clonar el repositorio en tu equipo, **mediante consola**:
+1. Clonar el repositorio en tu equipo, **mediante consola** por http o ssh:
 ```sh
 > cd <folder path>
 > git clone https://github.com/:owner/:repo
