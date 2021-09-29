@@ -6,8 +6,8 @@
 [![DevOps](https://github.com/Eywen/iwvg-devops-blanca-castanio/actions/workflows/test-sonar.yml/badge.svg)](https://github.com/Eywen/iwvg-devops-blanca-castanio/actions/workflows/test-sonar.yml)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Eywen_iwvg-devops-blanca-castanio&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Eywen_iwvg-devops-blanca-castanio)
 [![BCH compliance](https://bettercodehub.com/edge/badge/Eywen/iwvg-devops-blanca-castanio?branch=develop)](https://bettercodehub.com/results/Eywen/iwvg-devops-blanca-castanio)
+[![Heroku broken](https://iwvg-devops-blanca-castanio.herokuapp.com/system/version-badge)](https://iwvg-devops-blanca-castanio.herokuapp.com/swagger-ui.html)
 
-https://bettercodehub.com/results/Eywen/iwvg-devops-blanca-castanio
 
 
 ### :gear: Instalación del proyecto
