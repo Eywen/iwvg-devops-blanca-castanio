@@ -8,7 +8,8 @@
 [![BCH compliance](https://bettercodehub.com/edge/badge/Eywen/iwvg-devops-blanca-castanio?branch=develop)](https://bettercodehub.com/results/Eywen/iwvg-devops-blanca-castanio)
 [![Heroku broken](https://iwvg-devops-blanca-castanio.herokuapp.com/system/version-badge)](https://iwvg-devops-blanca-castanio.herokuapp.com/swagger-ui.html)
 
-
+### Tecnologías necesarias
+`Java` `Maven` `GitHub` `GitHub Actions` `Sonarcloud` `Better Code Hub` `Slack` `Spring-boot` `Heroku` `OpenAPI`
 
 ### :gear: Instalación del proyecto
 1. Clonar el repositorio en tu equipo, **mediante consola** por http o ssh:
