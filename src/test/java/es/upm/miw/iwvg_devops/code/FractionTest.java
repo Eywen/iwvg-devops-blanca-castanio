@@ -52,7 +52,7 @@ public class FractionTest {
     @Test
     void testDivide() {
         fraction.divide(new Fraction(12, 5));
-        assertEquals(40, fraction.getNumerator());
+        assertEquals(96, fraction.getNumerator());
         assertEquals(48, fraction.getDenominator());
     }
 }
