@@ -27,6 +27,17 @@ public class Searches {
                         });
     }
 
+    Fraction findFractionAdditionByUserId(String id){
+        return new UsersDatabase().findAll()
+                .filter(user -> id.equals(user.getId()))
+                .flatMap(user -> user.getFractions().stream())
+                .reduce(new Fraction(1, 1),
+                        (acumulador, fraction) -> {
+                            acumulador.add(fraction);
+                            return acumulador;
+                        });
+    }
+
     public Stream<String> findUserFamilyNameByAllNegativeSignFractionDistinct() {
         return new UsersDatabase().findAll()
                 .filter(user -> user.getFractions().stream()
