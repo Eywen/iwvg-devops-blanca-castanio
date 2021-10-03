@@ -25,6 +25,13 @@ public class SearchesTest {
     }
 
     @Test
+    void TestFindFractionAdditionByUserId(){
+        Fraction fractionAdd = new Searches().findFractionAdditionByUserId("4");
+        assertEquals(24, fractionAdd.getNumerator());
+        assertEquals(8, fractionAdd.getDenominator());
+    }
+
+    @Test
     void testFindFractionMultiplicationByUserFamilyName() {
         Fraction fractionMultiply = new Searches().findFractionMultiplicationByUserFamilyName("López");
         assertEquals(12, fractionMultiply.getNumerator());
