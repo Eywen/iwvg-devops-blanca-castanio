@@ -3,32 +3,34 @@ package es.upm.miw.iwvg_devops.code;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class UserTest {
     private User user;
+    List<Fraction> fractions;
 
-    //@BeforeEach
+    @BeforeEach
     void before() {
-       // user = new User("usu001", "usuario1", "familyName", List<Fraction> fractions);
+       fractions = new ArrayList<>(List.of(
+               new Fraction(4, 2),
+               new Fraction(3, 5)));
+        user = new User("usu001", "usuario1", "familyName", fractions);
     }
 
-    //@Test
+    @Test
     void testUserStringStringStringListFraction() {
-        // TODO: to check whit FRACCION class sets into contructor of this test class
-        //assertEquals("usu001",user.getId());
-        //assertEquals("usuario1",user.getName());
-        //assertEquals("familyName",user.getFamilyName());
-        //assertEquals(new Fraction(),user.getFractions);
+        assertEquals("usu001",user.getId());
+        assertEquals("usuario1",user.getName());
+        assertEquals("familyName",user.getFamilyName());
+        assertEquals(fractions,user.getFractions());
     }
 
-    //@Test
+    @Test
     void testUser() {
-        // TODO: uncomment when we have FRACTION class code
-        //user = new User(); //TODO: user created with constructor of parameters when we have Fraction class
-        //assertEquals("usu002",user.getId());
-        //assertEquals("usuario2",user.getName());
-        //assertEquals("familyName2",user.getFamilyName());
-        //assertEquals(new Fraction(parameters),user.getFractions);
+        User user1 = new User();
+        assertEquals(new ArrayList<>(),user1.getFractions());
     }
 }
