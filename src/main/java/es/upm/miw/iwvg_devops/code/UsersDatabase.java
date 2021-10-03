@@ -5,8 +5,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class UsersDatabase {
-    //TODO: uncomment when we`ll have Fraction class
-    /*public Stream<User> findAll() {
+    public Stream<User> findAll() {
 
         List<Fraction> fractions1 = List.of(
                 new Fraction(0, 1),
@@ -49,5 +48,5 @@ public class UsersDatabase {
                 new User("5", "Antonio", "Blanco", fractions5),
                 new User("6", "Paula", "Torres", fractions6)
         );
-    }*/
+    }
 }
