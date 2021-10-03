@@ -1,4 +1,7 @@
 package es.upm.miw.iwvg_devops.code;
+
+import java.util.stream.Stream;
+
 public class Searches {
 
     public Fraction findFractionMultiplicationByUserFamilyName(String familyName){
@@ -11,5 +14,13 @@ public class Searches {
                         return acumulador;
                     }
                 );
+    }
+
+    public Stream<String> findUserFamilyNameByAllNegativeSignFractionDistinct(){
+        return new UsersDatabase().findAll()
+                .filter(user -> user.getFractions().stream()
+                        .anyMatch(fraction -> fraction.decimal() < 0))
+                .map(User::getFamilyName)
+                .distinct();
     }
 }
